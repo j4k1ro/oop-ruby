@@ -1,0 +1,16 @@
+= oop-ruby
+zer0warm <dqhieu.2016@gmail.com>
+v0.0.1, 2019/06/26
+
+== Overview
+This repository keeps track of my solutions to exercises when reading https://launchschool.com/books/oo_ruby/read/introduction[Object Oriented Programming with Ruby].
+
+== List of exercises
+:tomdir: solutions/tom
+|===
+|#|Lesson|Exercises
+
+|1
+|https://launchschool.com/books/oo_ruby/read/the_object_model[The Object Model]
+|include::{tomdir}/the_object_model.adoc[Solution to exercises]
+|===

@@ -1,0 +1,25 @@
+= Solutions to The Object Model chapter
+zer0warm <dqhieu.2016@gmail.com>
+v0.0.1, 2019/06/26
+
+== Exercise 1
+
+=== How do we create an object in Ruby?
+We define the method between keywords `class` and `end`, and call the class method `::new` on that class.
+
+=== Example
+[source,ruby,indent=0]
+----
+include::library.rb[]
+----
+
+== Exercise 2
+
+=== What is a module? What is its purpose? How do we use them with our classes?
+A collection of behaviors that can be included in other classes by `include`, or *mixin*. Modules can't be instantiated.
+
+=== Example
+[source,ruby,indent=0]
+----
+include::library_with_module.rb[]
+----
