@@ -8,9 +8,13 @@ v0.0.1, 2019/06/26
 We define the method between keywords `class` and `end`, and call the class method `::new` on that class.
 
 === Example
+.library.rb
 [source,ruby,indent=0]
 ----
-include::library.rb[]
+class Library
+end
+
+local_library = Library.new # local_library is now an instance of Library
 ----
 
 == Exercise 2
@@ -19,7 +23,26 @@ include::library.rb[]
 A collection of behaviors that can be included in other classes by `include`, or *mixin*. Modules can't be instantiated.
 
 === Example
+.library_with_module.rb
 [source,ruby,indent=0]
 ----
-include::library_with_module.rb[]
+module Help
+  def offer_help
+    "Hello, how can we help you?"
+  end
+end
+
+class Library
+  include Help
+end
+
+class ConvenientStore
+  include Help
+end
+
+vaski = Library.new
+puts vaski.offer_help
+
+seven_eleven = ConvenientStore.new
+puts seven_eleven.offer_help
 ----
