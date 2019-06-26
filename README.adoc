@@ -12,5 +12,5 @@ This repository keeps track of my solutions to exercises when reading https://la
 
 |1
 |https://launchschool.com/books/oo_ruby/read/the_object_model[The Object Model]
-|link:{tomdir}[My solution]
+|link:{tomdir}/the_object_model.adoc[My solution]
 |===
